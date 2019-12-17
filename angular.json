@@ -31,12 +31,11 @@
               "projects/epy/tsconfig.lib.json",
               "projects/epy/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "epy"
 }
