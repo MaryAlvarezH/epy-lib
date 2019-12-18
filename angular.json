@@ -7,13 +7,20 @@
       "projectType": "library",
       "root": "projects/epy",
       "sourceRoot": "projects/epy/src",
-      "prefix": "ui",
+      "prefix": "epy",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
             "tsConfig": "projects/epy/tsconfig.lib.json",
-            "project": "projects/epy/ng-package.json"
+            "project": "projects/epy/ng-package.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/epy/src/lib/assets",
+                "output": "/assets"
+              }
+            ]
           }
         },
         "test": {
@@ -21,7 +28,14 @@
           "options": {
             "main": "projects/epy/src/test.ts",
             "tsConfig": "projects/epy/tsconfig.spec.json",
-            "karmaConfig": "projects/epy/karma.conf.js"
+            "karmaConfig": "projects/epy/karma.conf.js",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/epy/src/lib/assets",
+                "output": "/assets"
+              }
+            ]
           }
         },
         "lint": {
