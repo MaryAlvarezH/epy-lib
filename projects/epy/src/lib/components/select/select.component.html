@@ -1,0 +1,10 @@
+<div class="select-field">
+  <p>
+    {{ field }} <span>{{ legend }}</span>
+  </p>
+  <div class="custom-select" style="width:200px;">
+    <select [(ngModel)]="selectedValue" (ngModelChange)="onChange()">
+      <option *ngFor="let item of items" [ngValue]="item">{{ item }}</option>
+    </select>
+  </div>
+</div>

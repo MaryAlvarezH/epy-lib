@@ -3,6 +3,8 @@
 @mixin btn($color, $outline: true) {
   height: inherit;
   width: inherit;
+  min-height: 35px;
+  min-width: 180px;
   border-radius: 5px;
   cursor: pointer;
   font-family: $base-font;

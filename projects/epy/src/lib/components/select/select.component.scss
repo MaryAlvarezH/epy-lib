@@ -1,0 +1,27 @@
+@import "../../styles/base.scss";
+
+.select-field {
+  margin-top: 0;
+  position: relative;
+  font-family: $base-font;
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #717171;
+    margin: 0;
+  }
+
+  span {
+    color: #9b9b9b;
+  }
+
+  select {
+    width: 350px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("/icons/arrow_down_green.svg") 100% no-repeat;
+  }
+}
